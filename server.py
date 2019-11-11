@@ -41,10 +41,6 @@ def api_all():
     return jsonify(books)
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    return "<h1>404</h1><p>The resource could not be found.</p>", 404
-
 
 # If we're running in stand alone mode, run the application
 if __name__ == '__main__':
